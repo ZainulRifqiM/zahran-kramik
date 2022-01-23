@@ -1,0 +1,41 @@
+.color-g {
+  background-color: #a2c09d;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+}
+
+.corosal {
+  height: 500px;
+  background-size: cover;
+}
+
+.katalog {
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #f7fafc;
+}
+
+.font-judul {
+  font-size: 24px;
+  font-family: 'Karla', sans-serif;
+}
+
+.font-ket {
+  font-size: 12px;
+  font-family: 'Karla', sans-serif;
+}
+
+.font-ket2 {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}

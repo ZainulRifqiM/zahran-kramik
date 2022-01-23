@@ -1,0 +1,175 @@
+.navbar {
+  background-color: #a2c09d !important;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  /* text-center: center; */
+}
+
+.navbar-brand {
+  padding-left: 120px;
+}
+
+.jumbotron {
+  background-color: #a2c09d !important;
+  height: 498px;
+  width: 100%;
+}
+
+.text-jumbotron {
+  padding-left: 120px;
+  padding-top: 54px;
+  font-size: 48px;
+  font-family: "Lora", serif;
+}
+
+.text-jumbotron-startingat {
+  padding-left: 120px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+}
+
+.text-jumbotron-harga {
+  padding-left: 120px;
+  color: white;
+  font-size: 48px;
+  font-family: "Karla", sans-serif;
+}
+
+.text-jumbotron-bahanbaku {
+  padding-right: 290px;
+  font-size: 32px;
+  font-family: "Karla", sans-serif;
+}
+
+.text-jumbotron-bahanbaku-kata {
+  padding-top: 10px;
+  color: #666666;
+  font-size: 21px;
+}
+
+.text-jumbotron-bahanbaku-color {
+  padding-top: 61px;
+  color: #000;
+  font-size: 32px;
+}
+
+.quotes-1 {
+  padding-top: 53px;
+  padding-left: 120px;
+  color: #c9c9c9;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+.logo-whatsapp {
+  padding-left: 120px;
+  padding-top: 210px;
+}
+
+.quotes-2 {
+  padding-top: 53px;
+  padding-right: 175px;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+.hr {
+  padding-left: 120px;
+  padding-right: 120px;
+  color: #691b1b;
+  height: 5px;
+  padding-top: 210px;
+}
+
+.txt-japan {
+  padding-left: 30px;
+  color: #691b1b;
+}
+
+.heading1 {
+  padding-left: 120px;
+  padding-top: 90pt;
+  font-family: "Lora", serif;
+  font-size: 46px;
+}
+
+.kicauan {
+  padding-top: 100px;
+  padding-left: 120px;
+  font-family: "Lora", serif;
+  font-size: 34px;
+}
+
+.p-kicauan {
+  color: #5a5a5a;
+  padding-left: 150px;
+  font-size: 18px;
+}
+
+.makna {
+  padding-top: 50px;
+  padding-left: 120px;
+  font-family: "Lora", serif;
+  font-size: 34px;
+}
+
+.p-makna {
+  color: #5a5a5a;
+  padding-left: 150px;
+  font-size: 18px;
+}
+
+.brg-hantu {
+  padding-top: 100px;
+  padding-right: 150px;
+}
+
+.garis {
+  width: 1304px;
+  height: 2px;
+  background-color: #691b1b;
+}
+
+.garis1 {
+  width: 1304px;
+  height: 2px;
+  background-color: #691b1b;
+}
+
+.heading2 {
+  font-family: "Lora", serif;
+  font-size: 32px;
+  padding-left: 120px;
+}
+.paragraf {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  padding-left: 120px;
+}
+
+.bakul {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.catalog {
+  padding-left: 120px;
+}
+
+.katalog {
+  background-color: #a2c09d;
+}
+
+.lomari {
+  padding-left: 50px;
+}
+
+.font-judul {
+  font-size: 24px;
+  font-family: "Karla", sans-serif;
+}
+
+.font-ket {
+  font-size: 12px;
+  font-family: "Karla", sans-serif;
+}

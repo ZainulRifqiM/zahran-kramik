@@ -1,0 +1,22 @@
+.sidebar[data-color='white']:after,
+.off-canvas-sidebar[data-color='white']:after {
+  background: #a2c09d;
+}
+
+.sidebar-wrapper {
+  overflow: hidden;
+}
+.main-panel {
+  background-color: #fcfffd;
+}
+
+.sidebar[data-color='white'] .logo .simple-text,
+.off-canvas-sidebar[data-color='white'] .logo .simple-text {
+  color: #ffff;
+}
+
+.sidebar .nav p,
+.off-canvas-sidebar .nav p {
+  margin-bottom: 0;
+  color: white;
+}
