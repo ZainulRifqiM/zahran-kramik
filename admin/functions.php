@@ -1,28 +1,29 @@
-<?php 
+<?php
 // koneksi ke database
 $conn = mysqli_connect("localhost", "root", "", "dbPenjualan");
 
-function query($query) {
+function query($query)
+{
 	global $conn;
 	$result = mysqli_query($conn, $query);
 	$rows = [];
-        while( $row = mysqli_fetch_assoc($result)) {
-            $rows[] = $row;
-        }
-        return $rows;
-	
+	while ($row = mysqli_fetch_assoc($result)) {
+		$rows[] = $row;
+	}
+	return $rows;
 }
 
 // Function Barang
-function tambahBarang($data) {
+function tambahBarang($data)
+{
 	global $conn;
 
 	// $IdBarang = $_POST['IdBarang'];
-    $NamaBarang = $_POST['NamaBarang'];
-    $Jumlah = $_POST['Jumlah'];
-    $HargaSatuan = $_POST['HargaSatuan'];
-    $kategori = $_POST['kategori'];
-	
+	$NamaBarang = $_POST['NamaBarang'];
+	$Jumlah = $_POST['Jumlah'];
+	$HargaSatuan = $_POST['HargaSatuan'];
+	$kategori = $_POST['kategori'];
+
 
 	// upload gambar
 	$gambar = upload();
@@ -38,10 +39,11 @@ function tambahBarang($data) {
 	// die;
 	mysqli_query($conn, $query);
 
-	return mysqli_affected_rows($conn); 
+	return mysqli_affected_rows($conn);
 }
 
-function editBarang($data) {
+function editBarang($data)
+{
 	global $conn;
 
 	// $IdBarang = htmlspecialchars($data["IdBarang"]);
@@ -67,43 +69,45 @@ function editBarang($data) {
 				  gambar = '$gambar'
 			  WHERE IdBarang = '$IdBarang'
 			 ";
-			//  var_dump($query);
-			//  die;
+	//  var_dump($query);
+	//  die;
 	mysqli_query($conn, $query);
 
 	return mysqli_affected_rows($conn);
 }
 
-function hapusBarang($IdBarang) {
+function hapusBarang($IdBarang)
+{
 	global $conn;
 	mysqli_query($conn, "DELETE 
 						 FROM barang 
 						 WHERE IdBarang = '$IdBarang'");
 	return mysqli_affected_rows($conn);
-
 }
 
-function updateBarang($IdBarang) {
+function updateBarang($IdBarang)
+{
 	global $conn;
 	mysqli_query($conn, "UPDATE barang SET
 							 IsDeleted = 1
 				   		WHERE IdBarang = '$IdBarang'
 						");
 	return mysqli_affected_rows($conn);
-
 }
 
-function getDataBarang() {
+function getDataBarang()
+{
 	global $conn;
 
 
 	$query = "SELECT * FROM barang";
 	$dataKelas = mysqli_query($conn, $query);
-	
-	return mysqli_fetch_all($dataKelas,MYSQLI_ASSOC); 
+
+	return mysqli_fetch_all($dataKelas, MYSQLI_ASSOC);
 }
 
-function upload() {
+function upload()
+{
 
 	$namaFile = $_FILES['gambar']['name'];
 	$ukuranFile = $_FILES['gambar']['size'];
@@ -111,7 +115,7 @@ function upload() {
 	$tmpName = $_FILES['gambar']['tmp_name'];
 
 	// cek apakah tidak ada gambar yang di upload
-	if ( $error === 4) {
+	if ($error === 4) {
 		echo "<script>
 					alert('pilih gambar terlebih dahulu!');
 			  </script>";
@@ -130,7 +134,7 @@ function upload() {
 	}
 
 	// cek jika ukurannya terlalu besar
-	if ($ukuranFile > 1000000 ) {
+	if ($ukuranFile > 1000000) {
 		echo "<script>
 					alert('Ukuran gambar terlalu besar');
 			  </script>";
@@ -140,19 +144,18 @@ function upload() {
 	// lolos pengecekan gambar siap di upload
 	// generate nama gambar baru
 	$namaFileBaru = uniqid();
-	$namaFileBaru.= '.';
-	$namaFileBaru.= $ekstensiGambar;
+	$namaFileBaru .= '.';
+	$namaFileBaru .= $ekstensiGambar;
 
-	move_uploaded_file($tmpName, '../assets/img/'. $namaFileBaru);
+	move_uploaded_file($tmpName, '../assets/img/' . $namaFileBaru);
 
 	return $namaFileBaru;
-
-
 }
 
 
 // Function Sales
-function tambahSales($data) {
+function tambahSales($data)
+{
 	global $conn;
 
 	// $IdSales = htmlspecialchars($data["IdSales"]);
@@ -165,11 +168,11 @@ function tambahSales($data) {
 			  ";
 	mysqli_query($conn, $query);
 
-	return mysqli_affected_rows($conn); 
-
+	return mysqli_affected_rows($conn);
 }
 
-function editSales($data) {
+function editSales($data)
+{
 	global $conn;
 
 	// $IdSales = $data["id_sales"];
@@ -186,38 +189,40 @@ function editSales($data) {
 	return mysqli_affected_rows($conn);
 }
 
-function hapusSales($IdSales) {
+function hapusSales($IdSales)
+{
 	global $conn;
 	mysqli_query($conn, "DELETE 
 						 FROM sales 
 						 WHERE IdSales = '$IdSales'");
 	return mysqli_affected_rows($conn);
-
 }
 
-function updateSales($IdSales) {
+function updateSales($IdSales)
+{
 	global $conn;
 	mysqli_query($conn, "UPDATE sales SET
 							 IsDeleted = 1
 				   		WHERE IdSales = '$IdSales'
 						");
 	return mysqli_affected_rows($conn);
-
 }
 
-function getDataSales() {
+function getDataSales()
+{
 	global $conn;
 
 
 	$query = "SELECT * FROM sales";
 	$dataKelas = mysqli_query($conn, $query);
-	
-	return mysqli_fetch_all($dataKelas,MYSQLI_ASSOC); 
+
+	return mysqli_fetch_all($dataKelas, MYSQLI_ASSOC);
 }
 
 
 // Function Pembeli
-function tambahPembeli($data) {
+function tambahPembeli($data)
+{
 	global $conn;
 
 	// $IdPembeli = htmlspecialchars($data["IdPembeli"]);
@@ -230,11 +235,11 @@ function tambahPembeli($data) {
 			  ";
 	mysqli_query($conn, $query);
 
-	return mysqli_affected_rows($conn); 
-
+	return mysqli_affected_rows($conn);
 }
 
-function editPembeli($data) {
+function editPembeli($data)
+{
 	global $conn;
 
 	// $IdPembeli = $data["id_Pembeli"];
@@ -251,38 +256,40 @@ function editPembeli($data) {
 	return mysqli_affected_rows($conn);
 }
 
-function hapusPembeli($IdPembeli) {
+function hapusPembeli($IdPembeli)
+{
 	global $conn;
 	mysqli_query($conn, "DELETE 
 						 FROM pembeli 
 						 WHERE IdPembeli = '$IdPembeli'");
 	return mysqli_affected_rows($conn);
-
 }
 
-function updatePembeli($IdPembeli) {
+function updatePembeli($IdPembeli)
+{
 	global $conn;
 	mysqli_query($conn, "UPDATE pembeli SET
 							 IsDeleted = 1
 				   		WHERE IdPembeli = '$IdPembeli'
 						");
 	return mysqli_affected_rows($conn);
-
 }
 
-function getDataPembeli() {
+function getDataPembeli()
+{
 	global $conn;
 
 
 	$query = "SELECT * FROM pembeli";
 	$dataKelas = mysqli_query($conn, $query);
-	
-	return mysqli_fetch_all($dataKelas,MYSQLI_ASSOC); 
+
+	return mysqli_fetch_all($dataKelas, MYSQLI_ASSOC);
 }
 
 
 // function Transaksi
-function tambahTransaksi($data) {
+function tambahTransaksi($data)
+{
 	global $conn;
 
 	$NoFaktur = htmlspecialchars($data["NoFaktur"]);
@@ -301,13 +308,15 @@ function tambahTransaksi($data) {
 			  VALUES
 			  ('$NoFaktur','$IdSales','$IdPembeli','$IdBarang','$JumlahPembelian','$JumlahHarga','$NoPO','$TanggalFaktur','$JatuhTempo','$Terms')
 			  ";
+
+
 	mysqli_query($conn, $query);
 
-	return mysqli_affected_rows($conn); 
-
+	return mysqli_affected_rows($conn);
 }
 
-function editTransaksi($data) {
+function editTransaksi($data)
+{
 	global $conn;
 
 	// $IdTransaksi = $data["id_Transaksi"];
@@ -340,27 +349,30 @@ function editTransaksi($data) {
 	return mysqli_affected_rows($conn);
 }
 
-function hapusTransaksi($NoFaktur) {
+function hapusTransaksi($NoFaktur)
+{
 	global $conn;
 	mysqli_query($conn, "DELETE 
 						 FROM transaksi
 						 WHERE NoFaktur = '$NoFaktur'");
-						//  die;
+	//  die;
 	return mysqli_affected_rows($conn);
 }
 
-function getDataTransaksi() {
+function getDataTransaksi()
+{
 	global $conn;
 
 
 	$query = "SELECT * FROM transaksi";
 	$dataKelas = mysqli_query($conn, $query);
-	
-	return mysqli_fetch_all($dataKelas,MYSQLI_ASSOC); 
+
+	return mysqli_fetch_all($dataKelas, MYSQLI_ASSOC);
 }
 
 // function Pembayaran
-function tambahPembayaran($data) {
+function tambahPembayaran($data)
+{
 	global $conn;
 
 	$NoFaktur = htmlspecialchars($data["NoFaktur"]);
@@ -376,11 +388,11 @@ function tambahPembayaran($data) {
 			  ";
 	mysqli_query($conn, $query);
 
-	return mysqli_affected_rows($conn); 
-
+	return mysqli_affected_rows($conn);
 }
 
-function editPembayaran($data) {
+function editPembayaran($data)
+{
 	global $conn;
 
 	// $IdPembayaran = $data["id_Pembayaran"];
@@ -408,14 +420,12 @@ function editPembayaran($data) {
 	return mysqli_affected_rows($conn);
 }
 
-function hapusPembayaran($IdPembayaran) {
+function hapusPembayaran($IdPembayaran)
+{
 	global $conn;
 	mysqli_query($conn, "DELETE 
 						 FROM pembayaran
 						 WHERE IdPembayaran = '$IdPembayaran'");
-						//  die;
+	//  die;
 	return mysqli_affected_rows($conn);
 }
-
-
-?>
