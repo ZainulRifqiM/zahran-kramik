@@ -38,8 +38,7 @@ if (isset($_POST["edit"])) {
 
 <div class="container" style="">
 	<h3 style="color: #66615B;">Edit Data Pembayaran</h3>
-	<?php var_dump($bayar);
-	?>
+
 	<form action="" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="IdPembayaran" value="<?= $bayar["IdPembayaran"] ?>">
 		<div class="mb-3">

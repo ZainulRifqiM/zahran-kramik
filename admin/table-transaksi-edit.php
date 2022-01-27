@@ -15,9 +15,8 @@ $transaksi = query("SELECT *
 					WHERE transaksi.IdSales=sales.IdSales
 					AND transaksi.IdPembeli=pembeli.IdPembeli
 					AND transaksi.IdBarang=barang.IdBarang
-					AND transaksi.NoFaktur = $NoFaktur ");
-var_dump($transaksi);
-die;
+					AND transaksi.NoFaktur = '$NoFaktur' ")[0];
+
 
 
 // cek apakah tombol submit sudah ditekan atau belum
