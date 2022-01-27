@@ -1,6 +1,6 @@
 <?php
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "dbPenjualan");
+$conn = mysqli_connect("localhost", "root", "root", "dbpenjualan");
 
 function query($query)
 {

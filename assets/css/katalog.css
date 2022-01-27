@@ -1,0 +1,34 @@
+.navbar-brand {
+    font-family: "Playfair Display", serif;
+    margin-left: 80px;
+    margin-right: 446px;
+    color: #535353;
+}
+
+.nav-link {
+    font-family: "Roboto", sans-serif;
+    margin-right: 140px;
+}
+
+.tag-pop {
+    font-family: "Playfair Display", serif;
+}
+
+.card {
+    /* width: 337px;
+    height: 431px; */
+    background-color: #f2f2f2;
+}
+
+.card-title {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.btn-light,
+.btn-light:hover,
+.btn-light:active,
+.btn-light:visited {
+    background-color: #543C52 !important;
+    color: white;
+}
