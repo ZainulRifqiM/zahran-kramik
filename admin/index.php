@@ -20,8 +20,9 @@ require "functions.php";
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- <link rel="icon" href="../img/smpn32bandung.png"> -->
+    <link rel="icon" href="../assets/img/logo.png" type="image/gif" sizes="16x16">
     <title>
-        Zahran Keramik
+        Zahran Keramik - Dashboard
     </title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->

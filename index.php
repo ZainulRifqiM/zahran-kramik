@@ -7,19 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <!-- <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon"> -->
+  <link rel="icon" href="assets/img/logo.png" type="image/gif" sizes="16x16">
   <title>Zahran Keramik</title>
 </head>
 <!-- Navigation -->
 <!-- Navbar  -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center id=" navbarNav">
@@ -31,10 +30,10 @@
           <a class="nav-link text-white" href="katalog.php">Katalog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="https://wa.me/6283817327542">Kontak</a>
+          <a class="nav-link text-white" href="https://wa.me/6283817327542" target="_blank">Kontak</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Lokasi</a>
+          <a class="nav-link text-white" href="https://goo.gl/maps/1TA2DCKemZtgpofJ8" target="_blank">Lokasi</a>
         </li>
       </ul>
     </div>
@@ -53,14 +52,13 @@
         aria-label="Slide 3"></button>
     </div> -->
     <div class="carousel-inner">
-      <div class="carousel-item active"
-        style="background-image: url('https://source.unsplash.com/eZynenfYVPQ/1920x1080')">
+      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/eZynenfYVPQ/1920x1080')">
         <div class="carousel-caption">
           <p>ZAHRAN</p>
           <p>KERAMIK</p>
           <h3>/Semua akan keramik pada masanya/</h3>
         </div>
-        <a class="admin text-white nav-link" href="admin/login.php">Admin</a>
+        <a class="admin text-white nav-link" href="admin/login.php" target="_blank">Admin</a>
       </div>
       <div class="carousel-item" style="background-image: url('https://source.unsplash.com/QRVSQH7OeX4/1920x1080')">
         <div class="carousel-caption">
@@ -68,7 +66,7 @@
           <p>KERAMIK</p>
           <h3>/Semua akan keramik pada masanya/</h3>
         </div>
-        <a class="admin text-white nav-link" href="admin/login.php">Admin</a>
+        <a class="admin text-white nav-link" href="admin/login.php" target="_blank">Admin</a>
       </div>
       <div class="carousel-item" style="background-image: url('https://source.unsplash.com/rco9Z8raWFM/1920x1080')">
         <div class="carousel-caption">
@@ -76,7 +74,7 @@
           <p>KERAMIK</p>
           <h3>/Semua akan keramik pada masanya/</h3>
         </div>
-        <a class="admin text-white nav-link" href="admin/login.php">Admin</a>
+        <a class="admin text-white nav-link" href="admin/login.php" target="_blank">Admin</a>
       </div>
     </div>
     <!-- <button class="" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -95,8 +93,7 @@
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->

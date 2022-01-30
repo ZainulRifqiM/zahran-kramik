@@ -39,6 +39,7 @@ if (isset($_POST["login"])) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="../assets/img/logo.png" type="image/gif" sizes="16x16">
   <title>Zahran Kramik - Login</title>
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" />
@@ -56,16 +57,22 @@ if (isset($_POST["login"])) {
           </div>
           <div class="col-md-5">
             <div class="card-body">
-              <div class="bd-highlight brand-wrapper mt-4 mb-5">
+              <div class="bd-highlight brand-wrapper mb-5">
                 <!-- <img src="assets/img/logo.png" alt="logo" class="logo" /> -->
-                <h1 class="font-weight-bold ">Log In</h1>
-                <h1 class="font-weight-bold ">To Your Account</h1>
+                <p class="font-weight-bold text-logo">ZAHRAN</p>
+                <p class="font-weight-bold text-logo">KERAMIK</p>
+              </div>
+
+              <div class="bd-highlight brand-wrapper ">
+                <!-- <img src="assets/img/logo.png" alt="logo" class="logo" /> -->
+                <h1 class="font-weight-bold ">Masuk ke Akun</h1>
+                <h1 class="font-weight-bold ">Anda</h1>
               </div>
 
               <form action="" method="POST" class="mt-5 mb-5">
                 <div class="form-group">
                   <!-- <label for="username" class="form-label fw-bolder">Username</label> -->
-                  <input name="username" class="form-control form-login" placeholder="username" required autofocus />
+                  <input name="username" class="form-control form-login" placeholder="Nama Pengguna" required autofocus />
                 </div>
                 <div class="form-group mb-4">
                   <!-- <label for="password" class="form-label fw-bolder">Password</label> -->

@@ -8,11 +8,12 @@ body {
   height: 237px;
 }
 
-.txt-hail {
-  margin-top: 70px;
+
+.text-logo {
+  font-family: 'Playfair Display';
+  font-size: 16px;
+  margin: -5px;
 }
-
-
 
 .login-card {
   border: 0;
@@ -78,7 +79,7 @@ body {
 
 .login-card .login-btn {
   padding: 13px 20px 12px;
-  background-color: #A2C09D;
+  background-color: #A0A0A0;
   border-radius: 10px;
   font-size: 17px;
   font-weight: bold;
